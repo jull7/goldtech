@@ -1,0 +1,115 @@
+@media only screen and (max-width: 768px) {
+  .white-bt {
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 5px 10px;
+    height: 30px; }
+
+  .ctr-bt {
+    margin-top: 80px; }
+
+  .logo {
+    margin-left: 10px; }
+    .logo img {
+      width: 100px;
+      transform: translateY(40%); }
+
+  .authentication .sign-in,
+  .authentication .sign-up {
+    text-align: center;
+    width: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    font-size: 13px; }
+
+  .learn-more .sect-t {
+    padding-bottom: 50px; }
+    .learn-more .sect-t .d-part {
+      overflow: hidden; }
+      .learn-more .sect-t .d-part img {
+        max-width: 100%;
+        margin-top: -30%; }
+    .learn-more .sect-t:first-child {
+      text-align: center; }
+    .learn-more .sect-t:last-child {
+      text-align: center; }
+
+  .busines-plan .flex-cont {
+    display: none; }
+  .busines-plan .d-round {
+    margin-bottom: 20px; }
+    .busines-plan .d-round .circle-h {
+      display: block !important; }
+    .busines-plan .d-round p {
+      min-height: 0; }
+
+  .invest {
+    text-align: center;
+    max-height: 200px; }
+    .invest h3 {
+      font-size: 18px; }
+    .invest h4 {
+      font-size: 16px; }
+    .invest .white-bt {
+      margin: 20px 0; }
+
+  .goldmin .d-about {
+    margin: 20px 0;
+    height: 250px; }
+    .goldmin .d-about a img {
+      height: 250px; }
+
+  footer {
+    min-height: 0;
+    text-align: center; }
+    footer .d-subs {
+      margin: 10px 0;
+      float: none; }
+      footer .d-subs h4 {
+        float: none;
+        margin: 8px 0; }
+    footer .copyr {
+      float: none;
+      margin-top: 0;
+      line-height: 50px; }
+
+  #subm_subs {
+    margin: 10px 0; }
+
+  #email {
+    margin: 10px -4px 10px 0; } }
+@media only screen and (max-width: 600px) {
+  .art-popup {
+    min-width: 85%; }
+
+  .main-sect {
+    height: 490px; }
+
+  .head-tx {
+    margin-top: 150px !important; } }
+@media only screen and (max-width: 500px) {
+  .learn-more {
+    text-align: center; }
+    .learn-more .head-t {
+      float: none; }
+    .learn-more .go-bt {
+      float: none;
+      margin-top: 10px; } }
+@media only screen and (max-width: 330px) {
+  .head-tx {
+    margin-top: 100px !important; }
+
+  .ctr-bt {
+    margin-top: 30px; } }
+@media only screen and (min-width: 768px) {
+  .artic-img {
+    height: 147px; }
+
+  .sect-t .d-part {
+    height: 400px; } }
+@media only screen and (min-width: 1200px) {
+  .artic-img {
+    height: 240px; } }
+
+/*# sourceMappingURL=media.css.map */

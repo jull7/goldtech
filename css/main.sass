@@ -1,0 +1,527 @@
+@font-face
+	font-family: RobotoMedium
+	src: url(../fonts/robotomedium.ttf)
+@font-face
+	font-family: RobotoLight
+	src: url(../fonts/robotolight.ttf)
+@font-face
+	font-family: RobotoThin
+	src: url(../fonts/robotothin.ttf)
+@font-face
+	font-family: SansProSemi
+	src: url(../fonts/SourceSansPro-Semibold.ttf)
+@font-face
+	font-family: SansProReg
+	src: url(../fonts/SourceSansPro-Regular.ttf)
+@font-face
+	font-family: SansProLight
+	src: url(../fonts/SourceSansPro-Light.ttf)
+
+
+// COLORS
+$primary-color: #c49664
+
+// FONTS
+$light-font: RobotoLight, sans-serif
+$reg-font: RobotoRegular, sans-serif
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	height: 100%
+	font-weight: normal
+
+.noscroll
+	overflow: hidden !important
+
+.clr
+	clear: both
+
+.before
+	content: ''
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+.container-full
+	width: 100%
+.non-op
+	position: relative
+.owl-buttons
+	div
+		background-color: transparent !important
+.owl-page
+	span
+		background-color: #FFF !important
+		border: 1px solid $primary-color
+		&:hover
+			background-color: $primary-color !important
+	&.active
+		span
+			background-color: $primary-color !important
+.white-bt
+	text-transform: uppercase
+	display: inline-block
+	height: 43px
+	padding: 10px 15px
+	cursor: pointer
+	border: 1px solid $primary-color
+	color: $primary-color
+	background-color: #FFF
+	font-size: 14px
+	font-family: $reg-font
+	margin-bottom: 10px
+	transition: .2s
+	&:hover
+		background-color: $primary-color
+		color: #FFF
+		text-decoration: none
+	&:focus
+		color: $primary-color
+		text-decoration: none
+.cent
+	text-align: center
+
+.wpr
+	position: relative
+
+.wrp-art
+	position: absolute
+	width: 100%
+	height: 100%
+	transition: top .3s linear
+	background-color: rgba(0,0,0,0.9)
+	z-index: 30
+	display: none
+.art-popup
+	padding: 0
+	position: fixed
+	text-align: center
+	background-color: #FFF
+	min-width: 600px
+	z-index: 30
+	border-radius: 3px
+	left: 50%
+	top: 52%
+	transform: translate(-50%, -51%)
+	box-shadow: 0 3px 20px rgba(0,0,0,0.4)
+	.close-bt
+		position: absolute
+		right: -16px
+		top: -16px
+		width: 30px
+		height: 30px
+		background-image: url(../img/icons/close.png)
+		background-position: center
+		background-size: 24px
+		background-color: rgba(131,130,130,.8)
+		border-radius: 15px
+		z-index: 40
+		&:hover
+			cursor: pointer
+			background-color: rgba(200,200,200,.8)
+	.head
+		position: relative
+		height: 145px
+		font-size: 18px
+		color: #FFF
+		text-align: center
+		background-position: 60%
+		background-size: cover
+		&:before
+			@extend .before
+			background: rgba(0, 0, 0, .5)
+		span.name
+			display: block
+			position: relative
+			padding: 50px 20px
+
+	p
+		padding: 40px
+		text-align: left
+		max-height: 357px
+		overflow: scroll
+		overflow-x: hidden
+body
+	position: relative
+header
+	position: relative
+	height: 60px
+	font-size: 16px
+	color: $primary-color
+	.btc
+		display: none
+		height: 100%
+		float: left
+		span
+			line-height: 60px
+.logo
+	display: block
+	position: absolute
+	margin: 0 auto
+	right: 0
+	left: 0
+	width: 135px
+	height: 60px
+	img
+		position: relative
+		width: 135px
+		transform: translateY(10%)
+
+.authentication
+	position: relative
+	float: right
+.sign-in,
+.sign-up
+	float: right
+	text-align: center
+	width: 80px
+	margin-top: 10px
+	margin-bottom: 10px
+	padding: 8px 0
+	font-size: 14px
+	font-family: $light-font
+	color: #c49664
+	transition: .2s
+	&:hover
+		background-color: $primary-color
+		color: #FFF
+		text-decoration: none
+	&:focus
+		color: $primary-color
+		text-decoration: none
+.sign-up
+	margin-left: 10px
+	border: 1px solid $primary-color
+.main-sect
+	position: relative
+	height: 590px
+	background-image: url(../img/bg/main-bg.jpg)
+	background-position: center
+	background-size: cover
+	text-align: center
+	&:before
+		@extend .before
+		background: rgba(0, 0, 0, .4)
+	.head-tx
+		color: #FFF
+		font-size: 60px
+		margin-top: 200px
+		font-family: SansProSemi
+		// transform: translateY(-50%)
+.ctr-bt
+	position: relative
+	display: inline-block
+	width: 150px
+	color: $primary-color
+	font-size: 18px
+	font-family: $reg-font
+	background-color: #FFF
+	margin-top: 120px
+	font-family: SansProReg
+	transition: .2s
+	padding: 10px 15px
+	&:hover
+		background-color: $primary-color
+		cursor: pointer
+		color: #FFF
+		text-decoration: none
+	&:focus
+		color: $primary-color
+		text-decoration: none
+.lined-h
+	display: flex
+	align-items: center
+	justify-content: center
+	color: $primary-color
+	font-family: SansProReg
+	font-size: 18px
+	margin: 30px auto
+	text-transform: uppercase
+	// text-align: center
+	&:before, &:after
+		content: ''
+		width: 40px
+		height: 1px
+		background: $primary-color
+		margin: 0 10px	
+
+.about-sect
+	h3
+		font-family: SansProReg
+		font-size: 35px
+		color: #000
+		margin: 0
+		padding-bottom: 10px
+	.sm-tx-gr
+		font-family: SansProLight
+		font-size: 16px
+		color: #999999
+		padding-bottom: 15px
+
+	.md-tx-gr
+		font-family: SansProLight
+		font-size: 18px
+		color: #999999	
+		padding-bottom: 15px
+	.r-image
+		position: relative
+		width: 100%
+.artic-sect
+	a
+		display: inline-block
+	img.artic-img
+		width: 100%
+	.sm-tx-bl
+		margin: 8px 0
+		font-size: 15px
+		font-weight: bold
+
+.ind-before
+	margin-top: 30px
+.ind-after
+	margin-bottom: 30px
+.ind-before
+	margin-top: 30px
+.full-width
+	padding-left: 0 !important
+	padding-right: 0 !important
+
+.learn-more
+	position: relative
+	padding-bottom: 40px
+	background-image: url(../img/bg/more.png)
+	background-position: center
+	background-size: cover
+	&:before
+		@extend .before
+		background: rgba(0, 0, 0, .9)
+	.head-t
+		color: $primary-color
+		font-family: SansProReg
+		font-size: 22px
+		float: left
+	.go-bt
+		margin-bottom: 0
+		float: right
+	.sect-t
+		position: relative
+		& :first-child
+			text-align: right
+		& :last-child
+			text-align: left
+		.d-part
+			position: relative
+			// height: 400px
+			img
+				object-fit: cover
+				height: 100%
+			&:before
+				transition: all 0.3s
+				@extend .before
+				background: rgba(0, 0, 0, .5)		
+			&:hover
+				&:before
+					background: rgba(0, 0, 0, .1 )
+		a
+			display: block
+			color: #FFF
+			font-size: 22px
+			font-family: SansProReg
+			&:hover
+				text-decoration: none
+			.img-full
+				width: 100%
+				// max-width: 390px
+			span
+				position: absolute
+				bottom: 45px
+				left: 25px
+.flex-cont
+	display: flex
+	width: 72%
+	margin: 0 auto
+	.separator
+		width: 44%
+		height: 3px
+		background-color: #c49664
+		margin-top: 55px
+	.circle
+		float: left
+		position: relative
+		margin: 30px auto
+		width: 55px
+		height: 50px
+		border-radius: 25px
+		border: 3px solid $primary-color
+		span
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			font-size: 18px
+			color: $primary-color
+.d-round
+	text-align: center
+	font-family: SansProReg
+	.circle-h
+		display: none
+		position: relative
+		margin: 20px auto
+		width: 50px
+		height: 50px
+		border-radius: 25px
+		border: 3px solid $primary-color
+		span
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			font-size: 18px
+			color: $primary-color
+	p
+		display: block
+		font-size: 18px
+		color: #000
+		padding: 0 15px
+		min-height: 160px
+
+	span.date
+		font-size: 18px
+			color: $primary-color
+.invest
+	position: relative
+	background-image: url(../img/bg/money.jpg)
+	background-position: center
+	background-size: cover
+	&:before
+		@extend .before
+		background: rgba(0, 0, 0, .4)
+	h3,
+	h4
+		text-transform: uppercase
+		color: #FFF
+		vertical-align: middle
+	h3
+		font-family: SansProReg
+		font-weight: 100
+	h4
+		font-family: SansProSemi
+	.white-bt
+		margin: 57px 0
+.goldmin
+	.d-about
+		margin-bottom: 10px
+		a
+			display: block
+			position: relative
+			img
+				width: 100%
+				height: 240px
+				object-fit: cover
+			span
+				position: absolute
+
+				bottom: 25px
+				left: 25px
+				font-size: 18px
+				font-family: SansProReg
+				// max-width: 150px 
+				color: #FFF
+			&:before
+				transition: all 0.3s
+				@extend .before
+				background: rgba(0, 0, 0, .4)
+			&:hover
+				&:before
+					background: rgba(0, 0, 0, .1)
+
+.team
+	.d-team
+		text-align: center
+		width: 90%
+		margin: 0 5%
+		.img-circle
+			width: 130px
+			height: 130px
+			border-radius: 50%
+
+.b-logo
+	.d-logo
+		text-align: center
+		width: 90%
+		margin: 0 5%
+		.img-circle
+			width: 130px
+			border-radius: 0
+
+.document
+	text-align: center
+	img
+		height: 55px
+footer
+	min-height: 110px
+	background-color: #2c2c2c
+	.copyr
+		margin-top: 32px 
+		line-height: 148px
+		float: left
+		color: $primary-color
+	.d-subs
+		float: right
+		line-height: 40px
+		margin: 34px 0
+		h4
+			float: left
+			display: block
+			font-size: 18px
+			color: $primary-color
+			font-family: SansProReg
+			margin-right: 20px
+			text-transform: uppercase
+#email
+	left: 120px
+	background-color: transparent
+	border: 1px solid $primary-color
+	width: 240px
+	height: 40px
+	color: #BEBEBE
+	padding: 0 10px
+	margin-right: -4px
+	vertical-align: top
+	&:focus
+		outline: none
+#subm_subs
+	background-color: $primary-color
+	border: none
+	width: 115px
+	font-size: 16px
+	color: #000
+	padding: 0
+	font-family: SansProReg
+	&:hover
+		color: #FFF
+	&:focus
+		outline: none
